@@ -13,7 +13,6 @@ public class PatientUtility {
 
     public static boolean isPatientValid(Patient patient) {
         if(patient == null ||
-                patient.getId() == null ||
                 patient.getFirstName().equals("") ||
                 patient.getLastName().equals("") ||
                 !isGenderValid(patient) ||
