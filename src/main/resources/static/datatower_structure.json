@@ -1,0 +1,14 @@
+[
+	{
+		"firstName": "Jose",
+		"lastName": "Neto",
+		"gender" : "M",
+		"birthday": "1979-01-01"
+	},
+	{
+		"firstName": "Stefany",
+		"lastName": "Leite",
+		"gender" : "F",
+		"birthday": "1989-01-01"
+	}
+]
