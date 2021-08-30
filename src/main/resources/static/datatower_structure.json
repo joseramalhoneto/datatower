@@ -10,5 +10,11 @@
 		"lastName": "Leite",
 		"gender" : "F",
 		"birthday": "1989-01-01"
+	},
+	{
+		"firstName": "Mary",
+		"lastName": "McGow",
+		"gender" : "F",
+		"birthday": "1983-01-01"
 	}
 ]

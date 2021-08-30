@@ -22,11 +22,12 @@ public class PatientController {
         this.service = service;
     }
 
-    @GetMapping
+    @GetMapping("/female")
     @ResponseStatus(HttpStatus.OK)
     public List<Patient> findAllFemale() {
         logger.info("@GetMapping/findAllFemale");
-        return service.findAllFemale();
+        List<Patient> allFemale = service.findAllFemale();
+        return allFemale;
     }
 
     @GetMapping("/{id}")

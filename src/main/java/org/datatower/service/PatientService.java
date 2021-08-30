@@ -26,12 +26,13 @@ public class PatientService {
     public List<Patient> findAllFemale() {
         List<Patient> allPatients = repository.findAll();
 
-        return allPatients
+        List<Patient> femalePatients = allPatients
                 .stream()
                 .filter(patient -> patient.getGender() == PatientUtility.FEMALE)
                 .sorted(Comparator.comparing(Patient::getLastName))
-                //.sorted(Comparator.comparing(Patient::getLastName, Comparator.reverseOrder()))
                 .collect(Collectors.toList());
+
+        return femalePatients;
     }
 
     public Patient findById(Long id) {
